@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>다중 선택 입력 필드에서 v-model 디렉티브</title>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="simple1">
+
+    </div>
+    <hr/>
+    <div id="simple2">
+        선택한 과일들 : <span v-html="fruits"></span>
+    </div>
+    <script type="text/javascript">
+        var model = {
+            fruits: []
+        }
+
+        var simple1 = new Vue({
+            el: '#simple1',
+            data: model
+        })
+
+        var simple2 = new Vue({
+            el: '#simple2',
+            data: model
+        })
+    </script>
+</body>
+</html>
